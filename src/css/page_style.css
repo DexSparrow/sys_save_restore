@@ -1,0 +1,138 @@
+body{
+    background: #1e1e3f;
+    font-family: system-ui;
+    color: white;
+}
+
+body span{
+  color: white;
+}
+
+#pop_up{
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    /* background: red; */
+}
+
+#pop_up form{
+    width: 100%;
+    height: 100%;
+}
+
+/*For the drop file*/
+
+.drop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80%;
+    padding: 20px;
+    border: 2px dashed #222245;
+    color: #222245;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .drop-container:hover {
+    background: #eee;
+  }
+  
+  .drop-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .drop-container.drag-active {
+    background: #eee;
+  }
+  
+  input[type=file] {
+    width: 350px;
+    max-width: 100%;
+    color: #222245;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #222245;
+  }
+  
+  input[type=file]:focus {
+    outline: 2px dashed #222245;
+    outline-offset: 2px;
+  }
+  
+  input[type=file]::file-selector-button {
+    margin-right: 8px;
+    border: none;
+    background: #222245;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #4747b8;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1e1e3f;
+      color: #fff;
+    }
+  
+    .drop-container {
+      border-color: #35356e;
+      color: #fff;
+    }
+  
+    .drop-container:hover {
+      background-color: #282853;
+    }
+  
+    .drop-container.drag-active {
+      background-color: #282853;
+    }
+  
+    .drop-title {
+      color: #fff;
+    }
+  
+    input[type=file] {
+      width: 350px;
+      max-width: 100%;
+      color: #fff;
+      border: 1px solid #35356e;
+      background-color: #1e1e3f;
+    }
+  
+    input[type=file]:focus {
+      outline: 2px dashed #7c7cc0;
+      outline-offset: 2px;
+    }
+  
+    input[type=file]::file-selector-button {
+      background-color: #35356e;
+      color: #fff;
+    }
+  }
+
+/**/
+
+/* button_submit_file */
+
+#button_submit_file{
+    width:20%;
+    height:8%;
+    margin-left: 40%;
+    margin-top: 1%;
+    position: relative;
+}
+
+#file_to_save{
+  background: white;
+}
